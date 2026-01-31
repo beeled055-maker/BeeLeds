@@ -391,6 +391,7 @@
         .footer {
             background: linear-gradient(180deg, #000, #050505);
             padding: 80px 20px 30px;
+            margin: 0;
             border-top: 1px solid rgba(255, 255, 255, 0.08);
         }
 
@@ -758,6 +759,9 @@
                 font-size: 1.4rem;
                 animation-duration: 5s;
             }
+             .carousel-container{
+                margin:0px 0px 0px 0px;
+             }
         }
 
         /* ================= SCROLL INDICATOR PROFISSIONAL MAIOR ================= */
@@ -810,7 +814,10 @@
                 opacity: 0;
                 transform: translateY(24px);
                 /* deslocamento maior para acompanhar tamanho */
+                
             }
+            
+           
         }
 
         .carousel-container {
@@ -821,7 +828,7 @@
             border-radius: 10px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0);
             overflow: hidden;
-            margin: 0 auto;
+            margin: 150px 100px 0px 0px;
         }
 
         h2 {
@@ -867,6 +874,13 @@
                 transform: translateX(-50%);
             }
         }
+
+        #relogio-navbar {
+            font-weight: 600;
+            font-size: 0.95rem;
+            font-family: 'Courier New', monospace;
+            white-space: nowrap;
+        }
     </style>
 </head>
 
@@ -899,6 +913,9 @@
 
                 <!-- Links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
+                    <div id="relogio-navbar" class="text-warning me-3">
+                        00:00:00
+                    </div>
                     <ul class="navbar-nav ms-auto align-items-lg-center">
                         <li class="nav-item">
                             <a class="nav-link" href="#quem-somos">Quem Somos</a>
@@ -936,12 +953,7 @@
                 <h1 class="beeled-title word">Publicidade</h1>
             </div>
         </div>
-
-        <div class="scroll-indicator" onclick="scrollToSection()">
-            <span></span>
-        </div>
     </section>
-
 
     <!-- PLANOS -->
     <section class="planos" id="planos">
@@ -959,19 +971,17 @@
                 <!-- PLANO SEMANAL -->
                 <div class="col-lg-4 col-md-6">
                     <div class="plano-card destaque">
-                        <h3>Plano Semanal</h3>
+                        <h3>Plano mensal</h3>
                         <p class="tempo">7 dias de exibição</p>
 
                         <ul>
-                            <li>✔ 27 inserções por dia</li>
-                            <li>✔ 18h de exibição diária</li>
                             <li>✔ Criação de arte inclusa</li>
                             <li>✔ Alta visibilidade</li>
                         </ul>
 
-                        <span class="preco">R$</span>
+                        <span class="preco">R$349,90</span>
 
-                        <a href="https://wa.me/5500000000000?text=Olá!%20Tenho%20interesse%20no%20Plano%20Semanal%20da%20BeeLED."
+                        <a href="https://wa.me/5546984031616?text=ol%C3%A1%2C%20gostaria%20de%20contratar%20o%20plano%20mensal%20da%20BeeLed."
                             target="_blank" class="btn btn-warning w-100 mt-3">
                             Contratar pelo WhatsApp
                         </a>
@@ -983,19 +993,17 @@
                     <div class="plano-card plano-principal">
                         <span class="badge-plano">Mais Vendido</span>
 
-                        <h3>Plano Mensal</h3>
+                        <h3>Trimensal</h3>
                         <p class="tempo">30 dias de exibição</p>
 
                         <ul>
-                            <li>✔ 27 inserções por dia</li>
-                            <li>✔ 18h de exibição diária</li>
                             <li>✔ Criação de arte inclusa</li>
                             <li>✔ Melhor custo-benefício</li>
                         </ul>
 
-                        <span class="preco">R$</span>
+                        <span class="preco">R$329,90/mês</span>
 
-                        <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20contratar%20o%20Plano%20Mensal%20da%20BeeLED."
+                        <a href="https://wa.me/5546984031616?text=ol%C3%A1%2C%20gostaria%20de%20contratar%20o%20plano%20trimensal%20da%20BeeLed."
                             target="_blank" class="btn btn-warning w-100 mt-3">
                             Contratar pelo WhatsApp
                         </a>
@@ -1005,19 +1013,17 @@
                 <!-- PLANO FLEXÍVEL -->
                 <div class="col-lg-4 col-md-6">
                     <div class="plano-card">
-                        <h3>Plano Flexível</h3>
+                        <h3>Plano anual</h3>
                         <p class="tempo">Tempo personalizado</p>
 
                         <ul>
-                            <li>✔ Escolha dias ou meses</li>
-                            <li>✔ Inserções ajustáveis</li>
                             <li>✔ Arte personalizada</li>
                             <li>✔ Ideal para campanhas</li>
                         </ul>
 
-                        <span class="preco">Sob Consulta</span>
+                        <span class="preco">299,90/mês</span>
 
-                        <a href="https://wa.me/5500000000000?text=Olá!%20Quero%20um%20plano%20flexível%20da%20BeeLED."
+                        <a href="https://wa.me/5546984031616?text=ol%C3%A1%2C%20gostaria%20de%20contratar%20o%20plano%20Anual%20da%20BeeLed."
                             target="_blank" class="btn btn-warning w-100 mt-3">
                             Falar com um consultor
                         </a>
@@ -1125,6 +1131,14 @@
                     </div>
                 </div>
 
+                <h2 style="font-weight: 900; font-size: 2.6rem; margin-top:10% ;" class="mb-4">LOCAL</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.121692222176!2d-51.999769123700986!3d-26.484026375430403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e5aa5c28e6cea3%3A0xcedbf8c870546c74!2sAv.%20Ol%C3%ADmpio%20Carvalho%20de%20Lima%2C%20404%20-%20S%C3%A3o%20Jos%C3%A9%2C%20Palmas%20-%20PR%2C%2085555-000%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1769819284860!5m2!1spt-BR!2sus"
+                    width="1000" height="140" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+
                 <script>
                     const track = document.querySelector('.carousel-track');
                     const prevButton = document.querySelector('.carousel-button.prev');
@@ -1156,6 +1170,21 @@
                         updateCarousel();
                     });
                 </script>
+                <script>
+                    function atualizarRelogio() {
+                        const agora = new Date();
+                        let horas = agora.getHours().toString().padStart(2, '0');
+                        let minutos = agora.getMinutes().toString().padStart(2, '0');
+                        let segundos = agora.getSeconds().toString().padStart(2, '0');
+
+                        document.getElementById('relogio-navbar').textContent =
+                            `${horas}:${minutos}:${segundos}`;
+                    }
+
+                    setInterval(atualizarRelogio, 1000);
+                    atualizarRelogio();
+                </script>
+
 
                 <!-- FOOTER PROFISSIONAL -->
                 <footer class="footer">
