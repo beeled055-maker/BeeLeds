@@ -882,6 +882,205 @@
             font-family: 'Courier New', monospace;
             white-space: nowrap;
         }
+
+        /* ================= CAROUSEL RESPONSIVO (MOBILE) ================= */
+        @media (max-width: 768px) {
+
+            .carousel-container {
+                width: 100%;
+                margin: 60px 0 0 0;
+                padding: 10px;
+            }
+
+            .carousel img {
+                width: 220px;
+                /* menor no celular */
+                height: 120px;
+                /* mantém proporção */
+                border-radius: 6px;
+            }
+
+            .carousel-track {
+                gap: 10px;
+                animation-duration: 35s;
+                /* mais suave no mobile */
+            }
+        }
+
+
+
+        .form-container {
+            background: #1a1a1a;
+            padding: 25px 30px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 420px;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.15);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        /* 🔒 ESCOPADO */
+        .form-container label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #0f0f0f;
+            border: 1px solid #444;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #ffd700;
+        }
+
+        .form-container input::placeholder {
+            color: #888;
+        }
+
+        .form-container input:focus {
+            outline: none;
+            border-color: #ffd700;
+            box-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
+        }
+
+        /* 🔒 BOTÃO SOMENTE DO FORM */
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ffd700;
+            color: #0f0f0f;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .form-container button:hover {
+            background-color: #e6c200;
+        }
+
+        .form-container .error {
+            color: #ff4d4d;
+            font-size: 13px;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+
+        .form-container .success {
+            color: #ffd700;
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        /* ================= CONTATO + DEMONSTRAÇÃO ================= */
+        .contato-demo {
+            padding: 120px 20px;
+            background: radial-gradient(circle at center, #111, #000);
+        }
+
+        .contato-container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        /* TEXTO */
+        .contato-info h2 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .contato-info h2 span {
+            color: #ffcc00;
+        }
+
+        .contato-info p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        /* VÍDEO */
+        .contato-info video {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(255, 204, 0, 0.25);
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 992px) {
+            .contato-container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .contato-info h2 {
+                font-size: 2.2rem;
+                text-align: center;
+            }
+
+            .contato-info p {
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 993px) {
+            .contato-info {
+                order: 2;
+            }
+
+            .form-container {
+                order: 1;
+            }
+        }
+
+        .video-wrapper {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(255, 204, 0, 0.25);
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            display: block;
+        }
+
+        .play-btn {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #ffcc00;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .play-btn:hover {
+            background: rgba(0, 0, 0, 0.35);
+        }
     </style>
 </head>
 
@@ -1003,6 +1202,34 @@
 
                     </div>
                 </div>
+                <!-- QUEM SOMOS -->
+                <section class="quem-somos" id="quem-somos">
+
+                    <div class="container">
+                        <h1 style="font-size: 3.5rem; font-weight: 900; margin-bottom: 40px;">Quem <span
+                                class="quem-somos-span">Somos?</span></h1>
+
+                        <div class="row align-items-center justify-content-center g-5">
+
+                            <div class="col-lg-6 text-center">
+                                <img src="Captura de tela 2025-12-01 200519.png" class="img-fluid rounded-4 shadow-lg"
+                                    style="max-height: 650px; object-fit: cover;">
+                            </div>
+
+                            <div class="col-lg-5">
+                                <ul style="list-style: none; margin: 0; padding: 0;">
+                                    <li class="qs-item"><span class="qs-icon">→</span> Painel de LED em Local
+                                        Estratégico</li>
+                                    <li class="qs-item"><span class="qs-icon">→</span> +2.800 Veículos por Dia</li>
+                                    <li class="qs-item"><span class="qs-icon">→</span> 18h Exibição Diária</li>
+                                    <li class="qs-item"><span class="qs-icon">→</span> 27 Inserções por Dia</li>
+                                    <li class="qs-item"><span class="qs-icon">→</span> Criação de Arte Inclusa</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
                 <!-- PLANOS -->
                 <section class="planos" id="planos">
                     <div class="container">
@@ -1084,33 +1311,7 @@
 
 
 
-                <!-- QUEM SOMOS -->
-                <section class="quem-somos" id="quem-somos">
 
-                    <div class="container">
-                        <h1 style="font-size: 3.5rem; font-weight: 900; margin-bottom: 40px;">Quem Somos</h1>
-
-                        <div class="row align-items-center justify-content-center g-5">
-
-                            <div class="col-lg-6 text-center">
-                                <img src="Captura de tela 2025-12-01 200519.png" class="img-fluid rounded-4 shadow-lg"
-                                    style="max-height: 650px; object-fit: cover;">
-                            </div>
-
-                            <div class="col-lg-5">
-                                <ul style="list-style: none; margin: 0; padding: 0;">
-                                    <li class="qs-item"><span class="qs-icon">→</span> Painel de LED em Local
-                                        Estratégico</li>
-                                    <li class="qs-item"><span class="qs-icon">→</span> +2.800 Veículos por Dia</li>
-                                    <li class="qs-item"><span class="qs-icon">→</span> 18h Exibição Diária</li>
-                                    <li class="qs-item"><span class="qs-icon">→</span> 27 Inserções por Dia</li>
-                                    <li class="qs-item"><span class="qs-icon">→</span> Criação de Arte Inclusa</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
                 <div class="carousel-container">
                     <h2
                         style="text-align:center; color:#ffc60c; font-size:19px; letter-spacing:2px; text-transform:uppercase;margin-top: 2%; margin-bottom:30px; font-weight:700;">
@@ -1132,6 +1333,97 @@
                         </div>
                     </div>
                 </div>
+                <section class="contato-demo">
+                    <div class="contato-container">
+
+                        <!-- FORMULÁRIO -->
+                        <div class="form-container">
+                            <h2>Solicite um orçamento</h2>
+
+                            <form id="contactForm">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" placeholder="Digite seu nome">
+
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" placeholder="Digite seu e-mail">
+
+                                <label for="numero">Telefone</label>
+                                <input type="text" id="numero" placeholder="Digite seu número">
+
+                                <div id="errorMessage" class="error"></div>
+                                <button type="submit">Quero anunciar</button>
+                            </form>
+
+                            <div id="successMessage" class="success"></div>
+                        </div>
+
+                        <!-- TEXTO + VÍDEO -->
+                        <div class="contato-info">
+                            <h2>
+                                Destaque sua marca com a <span>BeeLED</span>
+                            </h2>
+
+                            <p>
+                                Seu negócio aparece para milhares de pessoas todos os dias em um
+                                painel de LED de alta definição, estrategicamente localizado.
+                                Mais visibilidade, mais impacto, mais resultados.
+                            </p>
+
+                            <div class="video-wrapper">
+                                <video id="demoVideo">
+                                    <source src="copy_D6054952-0A98-4A8F-A5B7-7DB3C0084AA6.mp4" type="video/mp4">
+                                </video>
+
+                                <button class="play-btn" id="playVideo">
+                                    <i class="bi bi-play-fill"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+
+
+                <script>
+                    document.getElementById("contactForm").addEventListener("submit", function (event) {
+                        event.preventDefault();
+
+                        const nome = document.getElementById("nome").value.trim();
+                        const email = document.getElementById("email").value.trim();
+                        const numero = document.getElementById("numero").value.trim();
+                        const errorMessage = document.getElementById("errorMessage");
+                        const successMessage = document.getElementById("successMessage");
+
+                        errorMessage.textContent = "";
+                        successMessage.textContent = "";
+
+                        if (!nome || !email || !numero) {
+                            errorMessage.textContent = "Preencha todos os campos corretamente.";
+                            return;
+                        }
+
+                        if (!email.includes("@")) {
+                            errorMessage.textContent = "E-mail inválido.";
+                            return;
+                        }
+
+                        successMessage.textContent = "Formulário enviado com sucesso!";
+                        document.getElementById("contactForm").reset();
+                    });
+                </script>
+                <script>
+                    const video = document.getElementById('demoVideo');
+                    const playBtn = document.getElementById('playVideo');
+
+                    playBtn.addEventListener('click', () => {
+                        video.play();
+                        playBtn.style.display = 'none';
+                        video.setAttribute('controls', 'controls');
+                    });
+                </script>
+
 
                 <h2 style="font-weight: 900; font-size: 2.6rem; margin-top:10% ;" class="mb-4">LOCAL</h2>
                 <iframe
@@ -1186,6 +1478,7 @@
                     setInterval(atualizarRelogio, 1000);
                     atualizarRelogio();
                 </script>
+
 
 
                 <!-- FOOTER PROFISSIONAL -->
@@ -1327,3 +1620,4 @@
 </body>
 
 </html>
+                
