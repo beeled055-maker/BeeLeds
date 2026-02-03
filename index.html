@@ -1081,6 +1081,81 @@
         .play-btn:hover {
             background: rgba(0, 0, 0, 0.35);
         }
+
+        .clientes-section {
+            background-color: #111111;
+            border-radius: 20px;
+            padding: 80px 20px;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #ffbb00;
+        }
+
+        .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .testimonial {
+            background-color: #fffceb;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 350px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .comment {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .client-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .client-name {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .stars {
+            font-size: 22px;
+            color: #f5b301;
+            letter-spacing: 4px;
+            margin-bottom: 12px;
+            text-align: left;
+        }
+
+        .oque-dizem {
+            color: #ffffff;
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+
+        }
     </style>
 </head>
 
@@ -1309,6 +1384,7 @@
 
 
 
+
                 <div class="carousel-container">
                     <h2
                         style="text-align:center; color:#ffc60c; font-size:19px; letter-spacing:2px; text-transform:uppercase;margin-top: 2%; margin-bottom:30px; font-weight:700;">
@@ -1317,16 +1393,22 @@
                     <div class="carousel">
                         <div class="carousel-track">
                             <img src="benedita.png" alt="Parceiro 1">
-                            <img src="3.png" alt="Parceiro 2">
-                            <img src="uniao.png" alt="Parceiro 3">
+                            <img src="tezte.png" alt="Parceiro 2">
+                            <img src="cris-cofeitaria.png" alt="Parceiro 3">
                             <img src="maestra.png" alt="Parceiro 4">
-                            <img src="uniao.png" alt="Parceiro 5">
+                            <img src="3.png" alt="Parceiro 5">
+                            <img src="dom-gordo.png" alt="Parceiro 6">
+                            <img src="zf-logo.png" alt="Parceiro 7">
+                            <img src="uniao.png" alt="Parceiro 8">
                             <!-- Repetimos as imagens para criar efeito de loop contínuo -->
                             <img src="benedita.png" alt="Parceiro 1">
-                            <img src="3.png" alt="Parceiro 2">
-                            <img src="uniao.png" alt="Parceiro 3">
+                            <img src="tezte.png" alt="Parceiro 2">
+                            <img src="cris-cofeitaria.png" alt="Parceiro 3">
                             <img src="maestra.png" alt="Parceiro 4">
-                            <img src="uniao.png" alt="Parceiro 5">
+                            <img src="3.png" alt="Parceiro 5">
+                            <img src="dom-gordo.png" alt="Parceiro 6">
+                            <img src="zf-logo.png" alt="Parceiro 7">
+                            <img src="uniao.png" alt="Parceiro 8">
                         </div>
                     </div>
                 </div>
@@ -1334,26 +1416,74 @@
                     <div class="contato-container">
 
                         <!-- FORMULÁRIO -->
-                        <div class="form-container">
-                            <h2>Solicite um orçamento</h2>
+                        <section id="clientes" class="clientes-section">
+                            <div class="container">
+                                <h2 class="section-title"><span class="oque-dizem">O que nossos clientes </span>dizem
+                                </h2>
+                                <div class="testimonials">
 
-                            <form id="contactForm">
-                                <label for="nome">Nome</label>
-                                <input type="text" id="nome" placeholder="Digite seu nome">
+                                    <div class="testimonial">
+                                        <div class="stars" data-rating="5"></div>
 
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" placeholder="Digite seu e-mail">
+                                        <p class="comment">
+                                            "O aumento da visibilidade do studio e o retorno positivo dos clientes
+                                            mostram que a divulgação no telão gera resultados reais."
+                                        </p>
 
-                                <label for="numero">Telefone</label>
-                                <input type="text" id="numero" placeholder="Digite seu número">
+                                        <div class="client-info">
+                                            <img src="bem.png" alt="Cliente 1">
+                                            <span class="client-name">Ivana Silvestri – Studio Bendita Derme</span>
+                                        </div>
+                                    </div>
 
-                                <div id="errorMessage" class="error"></div>
-                                <button type="submit">Quero anunciar</button>
-                            </form>
+                                    <div class="testimonial">
+                                        <div class="stars" data-rating="5"></div>
+                                        <p class="comment">"A divulgação no telão chama atenção, gera interesse pelos
+                                            produtos, aumenta o fluxo na loja e destaca as ações de vendas da
+                                            concessionária."</p>
+                                        <div class="client-info">
+                                            <img src="capauto.png" alt="Clien
+                                    te 2">
+                                            <span class="client-name">Copauto</span>
+                                        </div>
+                                    </div>
 
-                            <div id="successMessage" class="success"></div>
-                        </div>
+                                    <div class="testimonial">
+                                        <div class="stars" data-rating="5"></div>
+                                        <p class="comment">"Mais visibilidade para o meu trabalho, atraindo a atenção de
+                                            novos clientes e aumentando significativamente meu alcance. Excelente
+                                            resultado!"</p>
+                                        <div class="client-info">
+                                            <img src="cris.png" alt="Cliente 3">
+                                            <span class="client-name">Cris Siqueira Confeitaria</span>
+                                        </div>
+                                    </div>
 
+                                    <div class="testimonial">
+                                        <div class="stars" data-rating="4"></div>
+                                        <p class="comment">"A divulgação trouxe mais visibilidade e destaque para o
+                                            trabalho, aumentando o reconhecimento da marca."</p>
+                                        <div class="client-info">
+                                            <img src="teline.jpg" alt="Cliente 3">
+                                            <span class="client-name">Tenile Ferronatto</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="testimonial">
+                                        <div class="stars" data-rating="5"></div>
+                                        <p class="comment">“Tive ótimos resultados ao colocar meu anúncio no telão! As
+                                            vendas aumentaram, novos clientes apareceram,garante grande visibilidade."
+                                        </p>
+                                        <div class="client-info">
+                                            <img src="zf.png" alt="Cliente 3">
+                                            <span class="client-name">Zfpneus</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
                         <!-- TEXTO + VÍDEO -->
                         <div class="contato-info">
                             <h2>
@@ -1420,6 +1550,31 @@
                         video.setAttribute('controls', 'controls');
                     });
                 </script>
+                <script>
+                    document.querySelectorAll('.stars').forEach(starDiv => {
+                        const rating = parseInt(starDiv.dataset.rating) || 0;
+                        let html = '';
+
+                        for (let i = 1; i <= 5; i++) {
+                            html += i <= rating ? '★' : '☆';
+                        }
+
+                        starDiv.innerHTML = html;
+                    });
+                </script>
+                <script>
+                    const testimonials = document.querySelectorAll('.testimonial');
+                    let current = 0;
+
+                    function showNextTestimonial() {
+                        testimonials.forEach((t, i) => t.style.display = i === current ? 'block' : 'none');
+                        current = (current + 1) % testimonials.length;
+                    }
+
+                    showNextTestimonial();
+                    setInterval(showNextTestimonial, 5000); // muda a cada 5 segundos
+                </script>
+
 
 
                 <h2 style="font-weight: 900; font-size: 2.6rem; margin-top:10% ;" class="mb-4">LOCAL</h2>
